@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+ul.sdt_menu{
+	margin:1em;
+	padding:6em;
+	list-style: none;
+	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+	font-size:14px;
+	width:100%;
+    display: table;
+}
+ul.sdt_menu a{
+	text-decoration:none;
+	outline:none;
+}
+ul.sdt_menu li{
+	float:left;
+	width:170px;
+	height:85px;
+	position:relative;
+	cursor:pointer;
+}
+ul.sdt_menu li > a{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:170px;
+	height:85px;
+	z-index:12;
+	background:transparent	 no-repeat bottom right;
+	-moz-box-shadow:0px 0px 2px #000 inset;
+	-webkit-box-shadow:0px 0px 2px #000 inset;
+	box-shadow:0px 0px 2px #000 inset;
+}
+ul.sdt_menu li a img{
+	border:none;
+	position:absolute;
+	width:0px;
+	height:0px;
+	bottom:0px;
+	left:85px;
+	z-index:100;
+	-moz-box-shadow:0px 0px 4px #000;
+	-webkit-box-shadow:0px 0px 4px #000;
+	box-shadow:0px 0px 4px #000;
+}
+ul.sdt_menu li span.sdt_wrap{
+	position:absolute;
+	top:25px;
+	left:0px;
+	width:170px;
+	height:60px;
+	z-index:15;
+}
+ul.sdt_menu li span.sdt_active{
+	position:absolute;
+	background:#111;
+	top:85px;
+	width:170px;
+	height:0px;
+	left:0px;
+	z-index:14;
+	-moz-box-shadow:0px 0px 4px #000 inset;
+	-webkit-box-shadow:0px 0px 4px #000 inset;
+	box-shadow:0px 0px 4px #000 inset;
+}
+ul.sdt_menu li span span.sdt_link,
+ul.sdt_menu li span span.sdt_descr,
+ul.sdt_menu li div.sdt_box a{
+	margin-left:15px;
+	text-transform:uppercase;
+	text-shadow:1px 1px 1px #000;
+}
+ul.sdt_menu li span span.sdt_link{
+	color:#fff;
+	font-size:24px;
+	float:left;
+	clear:both;
+}
+ul.sdt_menu li span span.sdt_descr{
+	color:#E36514;
+	float:left;
+	clear:both;
+	width:155px; /*For dumbass IE7*/
+	font-size:10px;
+	letter-spacing:1px;
+}
+ul.sdt_menu li div.sdt_box{
+	display:block;
+	position:absolute;
+	width:170px;
+	overflow:hidden;
+	height:170px;
+	top:85px;
+	left:0px;
+	display:none;
+	background:#000;
+}
+ul.sdt_menu li div.sdt_box a{
+	float:left;
+	clear:both;
+	line-height:30px;
+	color:#0B75AF;
+}
+ul.sdt_menu li div.sdt_box a:first-child{
+	margin-top:15px;
+}
+ul.sdt_menu li div.sdt_box a:hover{
+	color:#fff;
+}
+
+body {
+    background: rgb(241, 231, 254);
+}
+
+.movies {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movies li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    background: rgba(250, 168, 181, 0.4)
+}
+
+.movies li img {
+    max-width: 300px;
+    border-radius: 12px;
+}
+
+.movies li h2 {
+    color: #E36514;
+    font-size: 1.8em;
+    padding: 15px 10px 0;
+    margin-top: auto;
+    font-family: "Oswald", sans-serif;
+}
+
+.header{
+    max-width: 100%;
+    position: relative;
+    padding: 0 30px;
+    height: 80px;
+}
+
+.menu-container{
+    width: 100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    margin: 0 8px;
+    list-style: none;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu-item a{
+    margin: 0 8px;
+    list-style: none;
+    font-size: 1.6em;
+    text-decoration: none;
+    color: #E36514;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    margin: 0 8px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu-item a:hover{
+    color: pink;
+    transition: 0.5s;
+    text-decoration: underline;
+
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .menu-item{
+        margin: 8px 0;
+
+    }
+
+    .searchBar {
+        margin-right: 0;
+		display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+}
+
+.search h1 {
+    color: #000;
+    font-size: 1.4em;
+    font-family: "Oswald", sans-serif; 
+}
+
+.search {
+    padding: 15px 100px 0;
+    margin-top: auto;
+    margin: 0 8px;
+}
+
+.search input {
+    background-color: pink;
+    padding: 10px 20px;
+    border-radius: 15px;
+	color: #606060;
+	font: inherit;
+    border: none;
+	cursor: pointer;
+	outline: inherit;
+    opacity: 0.8;
+    font-weight: bold;
+    width: 400px;
+}

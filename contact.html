@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Slide Down Box Menu with jQuery and CSS3" />
+    <meta name="keywords" content="jquery, css3, sliding, box, menu, cube, navigation, portfolio, thumbnails" />
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="stylesheet/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="stylesheet/form.css" type="text/css" media="screen" />
+
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/index.js"> </script>
+
+    <title>Cine Search Engine</title>
+
+</head>
+
+<body>
+
+    <div class="content">
+
+        <ul id="sdt_menu" class="sdt_menu">
+            <li>
+                <a href="index.html">
+                    <img src="assets/home.png" alt="" />
+                    <span class="sdt_active"></span>
+                    <span class="sdt_wrap">
+                        <span class="sdt_link">home</span>
+                        <span class="sdt_descr">homepage</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="movie.html">
+                    <img src="assets/movies-item.png" alt="" />
+                    <span class="sdt_active"></span>
+                    <span class="sdt_wrap">
+                        <span class="sdt_link">Work</span>
+                        <span class="sdt_descr">Examples of work</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="resume.html">
+                    <img src="assets/acting.png" alt="" />
+                    <span class="sdt_active"></span>
+                    <span class="sdt_wrap">
+                        <span class="sdt_link">resume</span>
+                        <span class="sdt_descr">My resume</span>
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="contact.html">
+                    <img src="assets/contact.jpg" alt="" />
+                    <span class="sdt_active"></span>
+                    <span class="sdt_wrap">
+                        <span class="sdt_link">Contact</span>
+                        <span class="sdt_descr">Talk to Me in case of any questions</span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <form method="POST"
+            action="https://script.google.com/macros/s/AKfycbz5fPYoS4sAoug9PzhSd8Q64REsxtIwHWcPamWMeaUCa5eCgosFB5eY_bNlW6uT6CQF/exec">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." style="
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: &quot;Oswald&quot;, sans-serif;
+">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." style="
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: &quot;Oswald&quot;, sans-serif;
+">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input id="submit-button" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
